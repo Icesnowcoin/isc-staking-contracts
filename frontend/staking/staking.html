@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISC Staking - Ice Snow Coin</title>
+    <link rel="stylesheet" href="staking.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-brand">🧊 ISC Staking</div>
+        <button class="wallet-btn" id="connectWallet">Connect Wallet</button>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>ISC Staking Platform</h1>
+            <p>Stake ISC tokens and earn rewards</p>
+        </div>
+
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <div class="status-item">
+                <div class="status-label">Connected Account</div>
+                <div class="status-value" id="accountDisplay">Not Connected</div>
+            </div>
+            <div class="status-item">
+                <div class="status-label">ISC Balance</div>
+                <div class="status-value" id="balanceDisplay">0.00</div>
+            </div>
+            <div class="status-item">
+                <div class="status-label">Total Staked</div>
+                <div class="status-value" id="totalStakedDisplay">0.00</div>
+            </div>
+            <div class="status-item">
+                <div class="status-label">Pending Rewards</div>
+                <div class="status-value" id="pendingRewardsDisplay">0.00</div>
+            </div>
+        </div>
+
+        <!-- Alert Container -->
+        <div id="alertContainer"></div>
+
+        <!-- Pools Grid -->
+        <div class="pools-grid" id="poolsContainer">
+            <!-- Pools will be dynamically generated here -->
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>ISC Staking Platform | <a href="https://icesnowcoin.com">Visit Website</a> | <a href="https://bscscan.com/token/0x11229a3f976566FA8a3ba462C432122f3B8876f6">View Contract</a></p>
+        </div>
+    </div>
+
+    <!-- ethers.js CDN -->
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.umd.min.js"></script>
+    <!-- Staking Script -->
+    <script src="staking.js"></script>
+</body>
+</html>
