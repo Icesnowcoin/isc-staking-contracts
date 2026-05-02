@@ -12,7 +12,7 @@ const CONFIG = {
     ],
 
     // Staking Contract (Replace with actual address)
-    STAKING_ADDRESS: '0x0000000000000000000000000000000000000000',
+    STAKING_ADDRESS: '0x9014Be9d27b64a4cb889B9d0334740683F18185a',
     STAKING_ABI: [
         'function poolInfo(uint256 pid) view returns (address lpToken, uint256 allocPoint, uint256 lastRewardBlock, uint256 accISCPerShare)',
         'function userInfo(uint256 pid, address user) view returns (uint256 amount, uint256 rewardDebt)',
