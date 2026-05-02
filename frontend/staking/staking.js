@@ -20,7 +20,6 @@ const CONFIG = {
         'function deposit(uint256 pid, uint256 amount) external',
         'function withdraw(uint256 pid, uint256 amount) external',
         'function harvest(uint256 pid) external',
-        'function emergencyWithdraw(uint256 pid) external',
         'function poolLength() view returns (uint256)',
         'function totalAllocPoint() view returns (uint256)',
         'function ISCPerBlock() view returns (uint256)'
